@@ -79,7 +79,7 @@ h3 {
 }
 ul {
   list-style-type: none;
-  padding: 10px;
+  padding: 20px;
 }
 li {
   display: inline-block;
