@@ -1,0 +1,54 @@
+<template>
+  <div class="col-11 col-sm-10 col-md-8 col-lg-5 mx-auto review">
+    <div class="topPart">
+      <img src="../../assets/swimmingBoy.png" alt />
+      <div class="description">
+        <p>Jan Nowak</p>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr.</p>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.review {
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px 8px rgba(199, 199, 199, 0.36);
+  padding: 20px;
+  margin: 30px 0;
+  text-align: left;
+  .topPart {
+    display: flex;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 30px;
+      background-color: grey;
+      border-radius: 50%;
+    }
+    .description {
+      margin: 10px 0;
+      p {
+        margin: 0 0 10px 0;
+      }
+      i {
+        color: gold;
+        margin-right: 10px;
+      }
+    }
+  }
+  > p {
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+}
+</style>
