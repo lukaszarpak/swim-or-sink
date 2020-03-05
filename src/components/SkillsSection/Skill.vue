@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div class="col-8 col-sm-7 col-lg-3 mx-auto mb-5 sheets">
-      <img src="../../assets/photo1.jpg" alt />
-      <h3>Początkujący</h3>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
-    </div>
+  <div class="col-8 col-sm-7 col-lg-3 mx-auto mb-5 sheets">
+    <img src="../../assets/photo1.jpg" alt />
+    <h3>Początkujący</h3>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
   </div>
 </template>
 
