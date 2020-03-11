@@ -1,9 +1,9 @@
 <template>
   <div class="col-11 col-sm-10 col-md-8 col-lg-5 mx-auto review">
     <div class="topPart">
-      <img src="../../assets/swimmingBoy.png" alt />
+      <img :src="reviewimg" alt />
       <div class="description">
-        <p>Jan Nowak</p>
+        <p>{{ nameOnReview }}</p>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -11,12 +11,18 @@
         <i class="fas fa-star"></i>
       </div>
     </div>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr.</p>
+    <p>{{ textOnReview }}</p>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    reviewimg: String,
+    nameOnReview: String,
+    textOnReview: String
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -49,6 +55,7 @@ export default {};
   > p {
     margin: 20px 0 0 0;
     padding: 0;
+    text-align: justify;
   }
 }
 </style>
