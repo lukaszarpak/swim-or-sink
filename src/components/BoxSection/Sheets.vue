@@ -1,39 +1,43 @@
 <template>
-  <div class="wrapper" :class="{active: isActive}">
+  <div class="wrapper"  @click="exitSheet">
     <div class="sheet">
       <div class="exit" @click="exitSheet">
         <i class="fas fa-times"></i>
+      </div>
+      <div class="content">
+        <slot name="title"></slot>
+        <slot name="day1"></slot>
+        <slot name="description1"></slot>
+        <slot name="day2"></slot>
+        <slot name="description2"></slot>
+        <slot name="day3"></slot>
+        <slot name="description3"></slot>
       </div>
     </div>
   </div>
 </template>
 <script>
 export default {
-  props: {
-    isActive: Boolean
-  },
   methods: {
     exitSheet() {
-      let changeInActive = this.isActive;
-      changeInActive = !changeInActive;
-      this.$emit("closeSheet", changeInActive);
+      const active = false;
+      this.$emit("sheetDel", active);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-.active {
-  height: 100%;
-}
 .wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-  z-index: 2;
+  z-index: 4;
   transition: 2s;
+  color: #2d3681;
   .sheet {
     position: relative;
     top: 55%;
@@ -42,7 +46,6 @@ export default {
     background-color: #fff;
     max-width: 800px;
     width: 90%;
-    height: 70%;
     max-height: 700px;
     border-radius: 30px;
     .exit {
@@ -52,7 +55,23 @@ export default {
       cursor: pointer;
       i {
         font-size: 30px;
-        color: #2d3681;
+      }
+    }
+    .content {
+      width: 90%;
+      height: 100%;
+      padding: 50px 0;
+      margin: 0 auto;
+      text-align: left;
+      h2 {
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-top: 15px;
+        font-size: 1.5rem;
+      }
+      p {
+        margin-bottom: 2px;;
       }
     }
   }

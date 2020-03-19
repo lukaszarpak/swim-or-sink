@@ -1,31 +1,32 @@
 <template>
-  <div class="col-8 col-sm-7 col-md-5 col-lg-3 mx-auto mb-5 sheets">
-    <img :src="skillimg" alt="Photo not loaded" />
-    <h3>{{textOnSkill}}</h3>
-    <p>{{ textOnSkillBottom }}</p>
+  <div class="col-8 col-md-5 mx-auto mb-5 trainer">
+    <img :src="trainerPhoto" alt="Photo not loaded" />
+    <h3>{{ trainerName }}</h3>
+    <p>{{ trainerDescription }}</p>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    skillimg: String,
-    textOnSkill: String,
-    textOnSkillBottom: String
+    trainerPhoto: String,
+    trainerName: String,
+    trainerDescription: String
   }
 };
 </script>
 
 <style lang="scss" scoped>
-.sheets {
+.trainer {
   border: 5px solid #2fc0df;
   border-radius: 30px;
   color: black;
   background-color: #fff;
 
   > img {
-    width: 70%;
-    margin: 35px 20px 30px;
+    width: 90%;
+    margin: 35px auto 30px;
+    border-radius: 30px;
   }
   > h3 {
     color: #102c4f;

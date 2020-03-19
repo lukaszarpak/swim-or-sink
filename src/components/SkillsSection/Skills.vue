@@ -53,9 +53,9 @@ export default {
 <style scoped lang="scss">
 .wrap {
   background: linear-gradient(
-    200deg,
+    180deg,
     rgba(16, 44, 79, 1) 0%,
-    rgba(33, 75, 124, 1) 100%
+    rgba(33, 75, 124, 1) 80%
   );
   text-align: center;
   color: #fff;

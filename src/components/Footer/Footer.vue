@@ -27,8 +27,8 @@
           <p>e-mail: szkolaplywaniasos@gmail.com</p>
         </div>
         <div class="col-10 col-sm-6 col-lg-3 mx-auto foot">
-          <p>Regulamin</p>
-          <p>Warunki</p>
+          <p><a href="">Regulamin</a></p>
+          <p><a href="">Warunki</a></p>
         </div>
       </div>
     </div>
@@ -51,6 +51,9 @@ export default {};
   color: #fff;
   p {
     text-align: center;
+    a {
+      color: #fff;
+    }
   }
 }
 .icons {

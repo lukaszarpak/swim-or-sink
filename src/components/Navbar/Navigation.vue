@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="mobile" :class="{unhiden: isActive}">
+    <div class="mobile">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-2 mx-auto" v-for="item in menu" :key="item">
-            <a href>{{item}}</a>
+          <div class="col-12 col-md-2 mx-auto" v-for="(item, index) in menu" :key="index" @click="hideMenu">
+            <a :href="`#section${index}`">{{item}}</a>
           </div>
         </div>
       </div>
@@ -19,11 +19,11 @@ export default {
     };
   },
   props: {
-    isActive: Boolean
+    activate: Boolean,
   },
   methods: {
-    mobileMenu() {
-      this.isActive = !this.isActive;
+    hideMenu() {
+      this.$emit("hideMenu")
     }
   }
 };
@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .mobile {
   position: fixed;
-  top: -400px;
+  top: 100px;
   left: 0;
   width: 100%;
   z-index: 3;
@@ -62,9 +62,5 @@ export default {
       }
     }
   }
-}
-.unhiden {
-  top: 100px;
-  transition: 0.3s;
 }
 </style>
