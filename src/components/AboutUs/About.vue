@@ -4,21 +4,20 @@
       <div class="col-12">
         <h2>O nas</h2>
       </div>
-      <div class="col-10 col-md-10 col-lg-11 mx-auto text">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
+      <div class="col-10 col-md-10 col-lg-11 mx-auto text mb-0">
+        <p
+          class="my-2"
+        >Jesteśmy dwójką trenerów pływania, którzy zapragnęli stworzyć własną szkołę pływania. Wychodzimy naprzeciw Państwa oczekiwaniom, oferując wysoką jakość usług, których podstawą jest wykształcenie, doświadczenie i profesjonalizm. Jesteśmy osobami związanymi od dziecka z pływaniem, byłymi zawodnikami, a obecnie w pełni wykwalifikowanymi, aktywnymi instruktorami oraz trenerami.</p>
       </div>
-      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto text">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto text-center">
         <img src="../../assets/photo1.jpg" alt />
       </div>
       <div class="col-10 col-md-10 col-lg-4 mx-auto text">
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eosc onsetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos</p>
+        <h3 class="my-4">Kochamy pływać.. i uczyć!</h3>
+        <p>Wszystko co robimy jest efektem pasji do pływania, którą chcemy się z Państwem podzielić. Nasze uprawnienia są zatwierdzone przez Polski Związek Pływacki. Spędziliśmy wiele godzin w wodzie oraz w salach wykładowych. Uważamy że jest to istotna informacja w czasach, gdzie kursy instruktorskie można zrobić w jeden weekend lub przez internet (nawet przez osoby nie potrafiące pływać).</p>
       </div>
       <div class="col-10 col-md-10 col-lg-11 mx-auto text">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
-      </div>
-      <div class="col-10 col-md-10 col-lg-11 mx-auto text">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</p>
+        <p>Ponadto stale się doszkalamy, uzupełniamy swoją wiedzę posiłkując się literaturą, szkoleniami i konferencjami poświęconymi pływaniu. Chcemy być najlepsi w tym co robimy.</p>
       </div>
     </div>
   </div>
@@ -41,7 +40,7 @@ export default {};
       margin: 50px auto 50px;
     }
     img {
-      width: 100%;
+      width: 80%;
     }
     p {
       margin: 0 0 30px;

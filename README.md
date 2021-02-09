@@ -1,4 +1,4 @@
-# test
+# Swim or Sink
 
 ## Project setup
 ```

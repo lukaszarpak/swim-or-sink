@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <h2>Nasze specjalności</h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+    <p>Zajęcia w naszej szkole pływania prowadzimy w trzech grupach zaawansowania. Na bieżąco tworzymy nowe grupy i staramy się dobierać grupy tak, aby efekty naszej i Waszej pracy były jak najbardziej satysfakcjonujące. W zależności od liczebności oraz poziomu zaawansowania grupy zajęcia prowadzone są przez jednego lub dwóch trenerów, zarówno bezpośrednio z wody, jak i z lądu.</p>
     <div class="container mx-auto">
       <div class="row">
         <Skill
@@ -33,15 +33,15 @@ export default {
       skillimg1: require("../../assets/skill1.png"),
       skillimg2: require("../../assets/skill2.png"),
       skillimg3: require("../../assets/skill3.png"),
-      textOnSkill1: "Początkujący",
-      textOnSkill2: "Zaawansowany",
-      textOnSkill3: "Sportowiec",
+      textOnSkill1: "Grupa początkująca",
+      textOnSkill2: "Grupa średniozaawansowana",
+      textOnSkill3: "Grupa zaawansowana",
       textOnSkillBottom1:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "Nauka pływania od podstaw, oswajanie z wodą poprzez zróżnicowane ćwiczenia, gry i zabawy, nauka prawidłowego oddechu, nurkowania, pracy nóg oraz podstawowych elementów technicznych. a także nauka podstawowych zasad bezpieczeństwa i zachowania nad wodą. Zajęcia odbywają się na ,,małym,, basenie.",
       textOnSkillBottom2:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor",
+        "Nauka elementów technicznych pływania kraulem, grzbietem i żabą. Nauka pływania bez sprzętu pomocniczego (deska, makaron). Grupa idealna dla dzieci, które potrafią pływać z deską, znają prawidłową pracę nóg do kraula, oswojonych z wodą. Zajęcia odbywają się na ,,dużym’’ basenie. ",
       textOnSkillBottom3:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor"
+        "Nauka pływania sportowego wszystkimi stylami pływackimi. Poznawanie elementów technicznych: nawrotów i skoków. Przeznaczona dla osób, które potrafią pływać minimum trzema stylami i czują się jak ,,ryba’’ w wodzie, a także dla osób chcących doskonalić technikę oraz zainteresowanych wstąpieniem do sekcji pływackiej. "
     };
   },
   components: {

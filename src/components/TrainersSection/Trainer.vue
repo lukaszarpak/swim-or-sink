@@ -1,5 +1,5 @@
 <template>
-  <div class="col-8 col-md-5 mx-auto mb-5 trainer">
+  <div class="col-10 col-md-7 col-lg-5 mx-auto mb-5 trainer">
     <img :src="trainerPhoto" alt="Photo not loaded" />
     <h3>{{ trainerName }}</h3>
     <p>{{ trainerDescription }}</p>
@@ -23,14 +23,26 @@ export default {
   color: black;
   background-color: #fff;
 
+  &:hover {
+    img {
+      box-shadow: 5px 5px 15px 8px rgba(80, 80, 80, 0.226);
+      width: 80%;
+    }
+    h3 {
+      margin-top: 30px;
+    }
+  }
+
   > img {
     width: 90%;
     margin: 35px auto 30px;
-    border-radius: 30px;
+    border-radius: 20px;
+    transition: 0.5s;
   }
   > h3 {
     color: #102c4f;
     margin-bottom: 20px;
+    transition: 0.5s;
   }
   > p {
     text-align: justify;

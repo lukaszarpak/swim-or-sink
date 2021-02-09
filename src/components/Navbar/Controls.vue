@@ -4,7 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-10 mx-auto nav">
-            <a href="home"><img src="../../assets/LogoMain.png" alt /></a>
+            <a href="#home">
+              <img src="../../assets/LogoMain.png" alt />
+            </a>
           </div>
           <div class="col-1 ham">
             <div class="hamburger" @click="isActive = !isActive">
@@ -16,7 +18,9 @@
         </div>
       </div>
     </div>
-    <Navigation v-if="isActive" @hideMenu="hideMenu"/>
+    <transition name="slide">
+      <Navigation v-if="isActive" @hideMenu="hideMenu" />
+    </transition>
   </div>
 </template>
 <script>

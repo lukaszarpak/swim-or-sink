@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper"  @click="exitSheet">
+  <div class="wrapper" @click="exitSheet">
     <div class="sheet">
       <div class="exit" @click="exitSheet">
         <i class="fas fa-times"></i>
@@ -20,15 +20,14 @@
 export default {
   methods: {
     exitSheet() {
-      const active = false;
-      this.$emit("sheetDel", active);
+      this.$emit("sheetDel", false);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -71,9 +70,22 @@ export default {
         font-size: 1.5rem;
       }
       p {
-        margin-bottom: 2px;;
+        margin-bottom: 2px;
       }
     }
   }
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.3s;
+}
+/* .fade-leave {
+
+} */
+.fade-leave-active {
+  transition: opacity 0.3s;
+  opacity: 0;
 }
 </style>

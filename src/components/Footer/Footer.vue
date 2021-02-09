@@ -6,9 +6,6 @@
           <a href="https://www.facebook.com/SwimOrSink.SzkolaPlywania/" target="_blank">
             <i class="fab fa-facebook-square"></i>
           </a>
-          <a href>
-            <i class="fas fa-envelope"></i>
-          </a>
         </div>
         <div class="col-10 col-sm-6 col-lg-3 mx-auto foot">
           <div>
@@ -27,8 +24,10 @@
           <p>e-mail: szkolaplywaniasos@gmail.com</p>
         </div>
         <div class="col-10 col-sm-6 col-lg-3 mx-auto foot">
-          <p><a href="">Regulamin</a></p>
-          <p><a href="">Warunki</a></p>
+          <!-- <p><a href="">Regulamin</a></p>
+          <p><a href="">Warunki</a></p>-->
+          <p>Design i wykonanie</p>
+          <p>Łukasz Szarpak</p>
         </div>
       </div>
     </div>

@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <Controls id="home"/>
+    <Controls id="home" />
     <Landing />
-    <Boxes/>
-    <About  id="section3"/>
-    <Trainers id="section5"/>
+    <Boxes />
+    <About id="section0" />
+    <Trainers id="section2" />
     <Skills />
     <Reviews />
-    <Contact  id="section4"/>
+    <Contact id="section1" />
     <FooterComponent />
   </div>
 </template>

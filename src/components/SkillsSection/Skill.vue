@@ -1,7 +1,7 @@
 <template>
-  <div class="col-8 col-sm-7 col-md-5 col-lg-3 mx-auto mb-5 sheets">
+  <div class="col-10 col-sm-8 col-md-5 mx-auto mb-5 sheets">
     <img :src="skillimg" alt="Photo not loaded" />
-    <h3>{{textOnSkill}}</h3>
+    <h4>{{textOnSkill}}</h4>
     <p>{{ textOnSkillBottom }}</p>
   </div>
 </template>
@@ -27,8 +27,9 @@ export default {
     width: 70%;
     margin: 35px 20px 30px;
   }
-  > h3 {
+  > h4 {
     color: #102c4f;
+    height: 60px;
     margin-bottom: 20px;
   }
   > p {
