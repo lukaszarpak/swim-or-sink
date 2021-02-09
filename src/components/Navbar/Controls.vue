@@ -4,7 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="col-10 mx-auto nav">
-            <img src="../../assets/LogoMain.png" alt />
+            <a href="#home">
+              <img src="../../assets/LogoMain.png" alt />
+            </a>
           </div>
           <div class="col-1 ham">
             <div class="hamburger" @click="isActive = !isActive">
@@ -16,7 +18,9 @@
         </div>
       </div>
     </div>
-    <Navigation :isActive="isActive" />
+    <transition name="slide">
+      <Navigation v-if="isActive" @hideMenu="hideMenu" />
+    </transition>
   </div>
 </template>
 <script>
@@ -26,6 +30,11 @@ export default {
     return {
       isActive: false
     };
+  },
+  methods: {
+    hideMenu() {
+      this.isActive = false;
+    }
   },
   components: {
     Navigation
@@ -38,7 +47,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 4;
+  z-index: 5;
   background-color: #fff;
   border-bottom: 2px solid #0b70b8;
 }

@@ -29,9 +29,13 @@ export default {
 .review {
   border-radius: 30px;
   box-shadow: 5px 5px 15px 8px rgba(199, 199, 199, 0.36);
-  padding: 20px;
+  padding: 30px;
   margin: 30px 0;
   text-align: left;
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 5px 5px 15px 8px rgba(173, 173, 173, 0.36);
+  }
   .topPart {
     display: flex;
     img {
@@ -45,6 +49,7 @@ export default {
       margin: 10px 0;
       p {
         margin: 0 0 10px 0;
+        font-size: 1.2rem;
       }
       i {
         color: gold;

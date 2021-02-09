@@ -1,7 +1,13 @@
 <template>
   <div class="wrap">
     <h2>Opinie klientów</h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+    <p>
+      Zachęcamy do zostawienia opinii na temat naszych zajęć na naszej
+      <a
+        href="https://www.facebook.com/SwimOrSink.SzkolaPlywania/"
+        target="_blank"
+      >stronie facebookowej</a>.
+    </p>
     <div class="container mx-auto">
       <div class="row">
         <Review
@@ -44,30 +50,28 @@ import Review from "./Review.vue";
 export default {
   data: function() {
     return {
-      reviewimg1: require("../../assets/swimmingBoy.png"),
-      reviewimg2: require("../../assets/swimmingBoy.png"),
-      reviewimg3: require("../../assets/swimmingBoy.png"),
-      reviewimg4: require("../../assets/swimmingBoy.png"),
-      reviewimg5: require("../../assets/swimmingBoy.png"),
-      reviewimg6: require("../../assets/swimmingBoy.png"),
-      nameOnReview1: "Jan Nowak",
-      nameOnReview2: "Jan Nowak",
-      nameOnReview3: "Jan Nowak",
-      nameOnReview4: "Jan Nowak",
-      nameOnReview5: "Jan Nowak",
-      nameOnReview6: "Jan Nowak",
+      reviewimg1: require("../../assets/reviews/reviewPhoto1.png"),
+      reviewimg2: require("../../assets/reviews/reviewPhoto2.png"),
+      reviewimg3: require("../../assets/reviews/reviewPhoto3.png"),
+      reviewimg4: require("../../assets/reviews/reviewPhoto4.png"),
+      reviewimg5: require("../../assets/reviews/reviewPhoto5.png"),
+      reviewimg6: require("../../assets/reviews/reviewPhoto6.png"),
+      nameOnReview1: "Artur Rozner",
+      nameOnReview2: "Kamila Góreczny",
+      nameOnReview3: "Gabriel Turczyński",
+      nameOnReview4: "Marta Sikorska",
+      nameOnReview5: "Katarzyna Mroczkowska",
+      nameOnReview6: "Robert Morganti",
       textOnReview1:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr",
+        "Zróżnicowane zajęcia, bardzo ciekawe ćwiczenia, indywidualne podejście a efektem tego są szybkie postępy. Gorąco polecam!",
       textOnReview2:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr",
-      textOnReview3:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr",
+        "Moja osobista opinia byłaby stronnicza, gdyż znam i cenię Kubę od dawna. Za to po wczorajszych zajęciach mogę przekazać opinię swoich dzieci, 13-latki i 7-latka. Są zachwyceni. Szukając szkoły pływania od razu pomyślałam o szkole Kuby i Kamila i nie zawiodłam się.",
+      textOnReview3: "Polecam.. profesjonalni trenerzy.",
       textOnReview4:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr",
+        "Polecam, mój pięciolatek jest zachwycony. I przede wszystkim rewelacyjne godziny zajęć. Dzięki chłopaki.",
       textOnReview5:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr",
-      textOnReview6:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna consetetur sadipscing elitr"
+        "Polecam. Moja 6-latka zachwycona pierwszymi zajęciami. Oby tak zostało.",
+      textOnReview6: "Super szkoła, ekstra chłopaki, pozdrawiam."
     };
   },
   components: {
